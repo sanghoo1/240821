@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>text-shadow</title>
+  <style>
+    /* 서체 변경, 중앙정렬, 대소문자, 서체 크기*/
+    body {
+      font-family: '나눔고딕', '맑은 고딕',돋움,sans-serif;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 20px;
+    }
+
+    .title1{text-shadow: 10px 10px 10px #999 ;} /* x축 y축 번짐 색상 */
+    .title2{text-shadow: -10px -10px 10px orange;}
+    .title3{text-shadow: 0 5px 0 #666;}
+    .title4{text-shadow: 0 -10px #365fff;} /* 번짐 0이면 생략가능 */
+    .title5{
+      color:aqua;
+      text-shadow: 0 10px;} /* 색상 생략시 글자 색을 따라감 */
+    .title6{/*text-shadow: 0 0 10px #999,
+                         10px 10px 10px orange,
+                         -10px -10px 10px orchid,
+                         0 0 10px orangered ;}  중첩 가능*/ 
+                         text-shadow:
+                                     3.4px 3.4px 2.7px rgba(0, 0, 0, 0.025),
+                                     8.7px 8.7px 6.9px rgba(0, 0, 0, 0.035),
+                                     17.7px 17.7px 14.2px rgba(0, 0, 0, 0.045),
+                                     36.5px 36.5px 29.2px rgba(0, 0, 0, 0.055),
+                                     100px 100px 80px rgba(0, 0, 0, 0.08)
+;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="title1">text-shadow 서체 그림자</h2>
+  <h2 class="title2">text-shadow 서체 그림자</h2>
+  <h2 class="title3">text-shadow 서체 그림자</h2>
+  <h2 class="title4">text-shadow 서체 그림자</h2>
+  <h2 class="title5">text-shadow 서체 그림자</h2>
+  <h2 class="title6">text-shadow 서체 그림자</h2>
+  
+</body>
+</html>
